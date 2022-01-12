@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\Delegaty\bin\Debug\Delegaty.exe.config
+C:\Users\user\source\repos\Delegaty\bin\Debug\Delegaty.exe
+C:\Users\user\source\repos\Delegaty\bin\Debug\Delegaty.pdb
+C:\Users\user\source\repos\Delegaty\obj\Debug\Delegaty.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Delegaty\obj\Debug\Delegaty.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Delegaty\obj\Debug\Delegaty.exe
+C:\Users\user\source\repos\Delegaty\obj\Debug\Delegaty.pdb
