@@ -1,0 +1,14 @@
+C:\Users\user\Documents\antek\uno\dos\bin\Debug\dos.exe.config
+C:\Users\user\Documents\antek\uno\dos\bin\Debug\dos.exe
+C:\Users\user\Documents\antek\uno\dos\bin\Debug\dos.pdb
+C:\Users\user\Documents\antek\uno\dos\obj\Debug\dos.csproj.AssemblyReference.cache
+C:\Users\user\Documents\antek\uno\dos\obj\Debug\dos.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\antek\uno\dos\obj\Debug\dos.exe
+C:\Users\user\Documents\antek\uno\dos\obj\Debug\dos.pdb
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\obj\Debug\dos.csproj.AssemblyReference.cache
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\obj\Debug\dos.csproj.CoreCompileInputs.cache
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\obj\Debug\dos.exe
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\obj\Debug\dos.pdb
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\bin\Debug\dos.exe.config
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\bin\Debug\dos.exe
+C:\Users\user\Music\3dg\Karol\uno\uno\dos\bin\Debug\dos.pdb

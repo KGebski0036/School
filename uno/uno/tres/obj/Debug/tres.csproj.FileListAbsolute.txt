@@ -1,0 +1,7 @@
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\bin\Debug\tres.exe.config
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\bin\Debug\tres.exe
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\bin\Debug\tres.pdb
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\obj\Debug\tres.csproj.AssemblyReference.cache
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\obj\Debug\tres.csproj.CoreCompileInputs.cache
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\obj\Debug\tres.exe
+C:\Users\user\Music\3dg\Karol\uno\uno\tres\obj\Debug\tres.pdb
