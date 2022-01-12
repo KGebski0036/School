@@ -1,6 +1,0 @@
-C:\Users\user\Documents\prosze nie usuwa j\n1009\bin\Debug\n1009.exe.config
-C:\Users\user\Documents\prosze nie usuwa j\n1009\bin\Debug\n1009.exe
-C:\Users\user\Documents\prosze nie usuwa j\n1009\bin\Debug\n1009.pdb
-C:\Users\user\Documents\prosze nie usuwa j\n1009\obj\Debug\n1009.csproj.CoreCompileInputs.cache
-C:\Users\user\Documents\prosze nie usuwa j\n1009\obj\Debug\n1009.exe
-C:\Users\user\Documents\prosze nie usuwa j\n1009\obj\Debug\n1009.pdb
