@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostka</title>
+    <script>
+        var canvas;
+        function init(){
+            canvas = document.getElementById("canvas").getContext('2d');
+            canvas.lineWidth = 5;
+            canvas.clearRect(50, 50, 100, 100);
+            canvas.strokeRect(50, 50, 100, 100);
+            canvas.fillStyle = "#999999";
+            canvas.fillRect(50, 50, 100, 100);
+            var number = 1 + Math.floor(Math.random() * 6);
+            drawDots(number);
+        }
+
+        function drawDots(number){
+            switch(number) {
+                case 1:
+                  DrawOneOnMidle();
+                  break;
+                case 2:
+                  DrawTwoInAccountsTB();
+                  break;
+                case 3:
+                  DrawTwoInAccountsTB();
+                  DrawOneOnMidle();
+                  break;
+                case 4:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                break;
+                case 5:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                DrawOneOnMidle();
+                break;
+                case 6:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                DrawTwoOnmid();
+                break;
+             
+            }
+        }
+
+        function DrawOneOnMidle(){
+            canvas.beginPath();
+            var dotx = 50 + .5 * 100;
+            var doty = 50 + .5 * 100;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+
+        function DrawTwoInAccountsTB(){
+            canvas.beginPath();
+            var dotx = 50 + 3 * 6;
+            var doty = 50 + 3 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty + 60, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+        function DrawTwoInAccountsBT(){
+            canvas.beginPath();
+            var dotx = 50 + 3 * 6;
+            var doty = 100 + 5 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty - 60, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+        function DrawTwoOnmid(){
+            canvas.beginPath();
+            dotx = 50 + 3 * 6;
+            doty = 50 + .5 * 100;
+            canvas.arc(dotx, doty, 6, 0, Math. PI * 2, true);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math. PI * 2, true);
+            canvas.stroke();
+            canvas.closePath();
+        }
+
+    </script>
+</head>
+<body onload="init();">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</body>
+</html> 

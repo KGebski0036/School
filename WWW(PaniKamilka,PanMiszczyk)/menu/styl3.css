@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.option{
+    list-style-type: none;
+    margin: 10px;
+    background-color: rgb(31, 70, 66);
+    font-size: 150%;
+    width: 20%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 10px;
+} 
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+a:hover{
+    color: tomato;
+}
+ul{
+    padding: 0px;  
+}
+header{
+    background-color: green;
+    padding: 15px;
+    color: white;
+}
+footer{
+    background-color: black;
+    color:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#secoundlist{
+    position: absolute;
+    right: -111px;
+    top: 0px;
+    
+}
+.option2{
+    list-style-type: none;
+    margin-top: 1px;
+    background-color: rgb(31, 70, 66);
+    padding: 5px;
+    text-align: center;
+    display: none;
+}
+
+#sub:hover .option2{
+    display: block;
+}

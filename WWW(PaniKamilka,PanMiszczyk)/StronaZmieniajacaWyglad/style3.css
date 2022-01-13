@@ -1,0 +1,33 @@
+h1, h2, h3{
+    color: limegreen;
+    clear: both;
+} 
+.taStrona{
+ background-color: limegreen;
+
+ width: 100px;
+ margin: 10px;
+ float: left;
+}
+.otherPage{
+    background-color: lightslategray;
+    width: 100px;
+    margin: 10px;
+    float: left;
+}
+a:link{
+    text-decoration: none;
+
+}
+#pasekBoczny{
+    background-color: lightsteelblue;
+    border: 1px solid grey;
+    padding: 10px;
+}
+#stopka{
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Skanowanie tekstu</title>
+</head>
+<body style="background-color: #303030; color: aliceblue;">
+    <input type="text" id="text">
+    <button onclick="analizuj();">Analizuj</button>
+    <p id="output">Wynik</p>
+
+    <script>
+        function analizuj(){
+            var text = document.getElementById("text").value;
+            var output = document.getElementById("output");
+            var result = new Map();
+
+            output.innerHTML = "";
+
+            text = text.toLowerCase();
+
+            
+            for(let it of text){
+
+                if(isAlpha(it)){
+                    if(result.has(it)){
+                        result.set(it, result.get(it) + 1);
+                    }else{
+                        result.set(it,1)
+                        
+                    }
+                }
+
+            }
+
+            for(let [key,value] of result){
+                output.innerHTML += key + " - " + value + "<br>";
+            }
+        }
+
+        function isAlpha(char){
+            return char.match("[a-z]");
+        }
+
+    </script>
+</body>
+</html> 

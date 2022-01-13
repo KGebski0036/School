@@ -1,0 +1,58 @@
+body{
+    background-color: tomato;
+} 
+.tytul{
+    color: white;
+    width: 100%;
+}
+#nav{
+    float: right;
+    width: 30%;
+
+    color: tomato;
+    height: 300px;
+    margin: 5px;
+}
+#text{
+    float: left;
+    width: 60%;
+
+    color: tomato;
+    height: 300px;
+    margin: 5px;
+}
+#pasekBoczny{
+    clear: both;
+    width: 100%;
+    background-color: thistle;
+    color: tomato;
+    padding: 5px;
+}
+#stopka{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+.taStrona{
+    background-color: whitesmoke;
+    width: 150px;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.otherPage{
+    background-color: tomato;
+    width: 150px;
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    margin: 3px;
+}
+.main{
+    background-color: whitesmoke;
+}
+a:link{
+    text-decoration: none;
+    color: red;
+}

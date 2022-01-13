@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kostka</title>
+    <script>
+        var canvas;
+        var button;
+        var winik;
+        var nazwa1 = "Gracz 1";
+        var nazwa2 = "Gracz 2";
+        var gracz = nazwa1;
+        var wynikG1 = 0;
+        var wynikG2 = 0;
+        var lucky = false;
+        var buttonOK;
+        var buttonEnd;
+        function init(){
+            button = document.getElementById("button");
+            buttonOK = document.getElementById("buttonOK");
+            buttonEnd = document.getElementById("buttonEnd");
+            wynik = document.getElementById("wynik");
+            canvas = document.getElementById("canvas").getContext('2d');
+
+            buttonOK.style.display = "none";
+            canvas.lineWidth = 5;
+            canvas.clearRect(50, 50, 100, 100);
+            canvas.strokeRect(50, 50, 100, 100);
+            canvas.fillStyle = "#999999";
+            canvas.fillRect(50, 50, 100, 100);
+        }
+
+        function drawDots(){
+            button.disabled = true;
+            canvas.clearRect(50, 50, 100, 100);
+            var number = 1 + Math.floor(Math.random() * 6);
+            switch(number) {
+                case 1:
+                  DrawOneOnMidle();
+                  break;
+                case 2:
+                  DrawTwoInAccountsTB();
+                  break;
+                case 3:
+                  DrawTwoInAccountsTB();
+                  DrawOneOnMidle();
+                  break;
+                case 4:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                break;
+                case 5:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                DrawOneOnMidle();
+                break;
+                case 6:
+                DrawTwoInAccountsTB();
+                DrawTwoInAccountsBT();
+                DrawTwoOnmid();
+                break;
+             
+            }
+            wynik.innerHTML += gracz + " wylosował: " + number + "<br>";
+            if(gracz == nazwa1){
+                wynikG1 += number;
+            }else{
+                wynikG2 += number;
+            }
+            if(number == 6 && !lucky){
+                button.disabled = false;
+                lucky = true;
+            }else{
+                wynik.innerHTML += "---Koniec tury " + gracz;
+                if(gracz == nazwa1){
+                    gracz = nazwa2;
+                }else{
+                    gracz = nazwa1;
+                }
+                wynik.innerHTML += " rundę rozpoczyna " + gracz + " (naciśnij OK) ---<br>"
+                buttonOK.style.display = "inline";
+            }
+        }
+
+        function DrawOneOnMidle(){
+            canvas.beginPath();
+            var dotx = 50 + .5 * 100;
+            var doty = 50 + .5 * 100;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+
+        function DrawTwoInAccountsTB(){
+            canvas.beginPath();
+            var dotx = 50 + 3 * 6;
+            var doty = 50 + 3 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty + 60, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+        function DrawTwoInAccountsBT(){
+            canvas.beginPath();
+            var dotx = 50 + 3 * 6;
+            var doty = 100 + 5 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math.PI * 2);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty - 60, 6, 0, Math.PI * 2);
+            canvas.stroke()
+        }
+        function DrawTwoOnmid(){
+            canvas.beginPath();
+            dotx = 50 + 3 * 6;
+            doty = 50 + .5 * 100;
+            canvas.arc(dotx, doty, 6, 0, Math. PI * 2, true);
+            canvas.stroke();
+            canvas.closePath();
+            canvas.beginPath();
+            dotx = 50 + 100 - 3 * 6;
+            canvas.arc(dotx, doty, 6, 0, Math. PI * 2, true);
+            canvas.stroke();
+            canvas.closePath();
+        }
+        function ChangePlayer(){
+            button.disabled = false;
+            lucky = false;
+            buttonOK.style.display = "none";
+        }
+        function End(){
+            wygrana = document.getElementById("wygrana");
+            wygrana.innerHTML = "<h1 style='color:red;'>Wygrał ";
+            
+            if(wynikG1 > wynikG2){
+                wygrana.innerHTML += nazwa1 + "</h1><br>"
+            }else{
+                wygrana.innerHTML += nazwa2 + "</h1><br>"
+            }
+            wygrana.innerHTML += "<h2>Ostareczny wynik to: " + wynikG1 + " : " + wynikG2;
+        }
+
+    </script>
+</head>
+<body onload="init();">
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <p id="wygrana" style="position: fixed;top: 10%;right: 50%;"></p>
+    <br>
+    <button id="button" onclick="drawDots();">Rzuć</button> 
+    <button id="buttonOK" onclick="ChangePlayer();">OK</button> 
+    <button id="buttonEnd" onclick="End();">Koniec</button> 
+    <p id="wynik"></p>
+</body>
+</html> 

@@ -1,0 +1,79 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.main {
+    xmin-width: 900px;
+}
+#powitanie, #pasekBoczny, #stopka, .Page {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#powitanie {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#nav {
+    width: 200px;
+    float: left
+}
+
+#text{
+    padding: 10px;
+    margin: 0 210px;
+    float: left;
+}
+
+#pasekBoczny {
+    background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    float: right;
+}
+
+#stopka {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+    clear: both;
+}
+
+#powitanie h1, #powitanie p, #nav {
+    margin: 0;
+    padding: 0;
+}
+
+.Page {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+}
+
+.Page:hover {
+    background-color: #ffffff;
+}
+
+.Page:first-child {
+   background-color:#4CAF50;
+   color: white;
+   font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}

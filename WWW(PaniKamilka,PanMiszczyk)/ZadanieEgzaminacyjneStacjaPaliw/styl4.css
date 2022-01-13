@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Arial";
+}
+.up{
+    float: left;
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 410px;
+}
+.baner_main{
+    width: 100%;
+    background-color: rgb(220, 220,220);
+    padding: 20px;
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.down{
+    float: left;
+    width: 50%;
+    background-color: rgb(255, 127, 80);
+    color: white;
+    height: 100px;
+}
+table,th{
+    border: rgb(255, 127, 80);
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}   
+a{
+    color: white;
+}

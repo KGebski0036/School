@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Tabliczka mnożenia</title>
+    <style>
+    td { border: 1px solid black; }
+    table {  border-collapse: collapse;}
+    </style>
+  </head>
+  <body onload=CreateTable();>
+    <table id="tabela">
+     </table>
+   </body>
+ </html>
+
+ <script>
+   function CreateTable() {
+     var tabela = document.getElementById("tabela");
+     var str = "";
+
+     str += "<tr>"
+      for (var i = 1; i < 11; i++) {
+        if (i == 1) {
+          str += "<td></td>"
+        }
+        str += "<td><b>"
+        str += i
+        str += "</b></td>"
+      }
+      str +=  "</tr>"
+
+      for (var i = 1; i < 11; i++) {
+          str += "<tr><td><b>"
+          str += i
+          str += "</b></td>"
+
+          for (var j = 1; j < 11; j++) {
+            str += "<td>"
+            str += i * j
+            str += "</td>"
+          }
+          str += "</tr>"
+      }
+      tabela.innerHTML = str
+   }
+ </script>

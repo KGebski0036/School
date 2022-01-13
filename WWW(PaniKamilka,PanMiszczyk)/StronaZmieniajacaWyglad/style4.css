@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color:chartreuse;
+    margin: 20px;
+} 
+#nav{
+    float: left;
+}
+#pasekBoczny{
+    float: right;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+}
+#text{
+    clear: both;
+}
+#stopka{
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    font-size: small;
+    width: 50%;
+}
+.taStrona{
+    color: white;
+}
+a{
+    color: white;
+}
+.main{
+    width: 50%;
+}

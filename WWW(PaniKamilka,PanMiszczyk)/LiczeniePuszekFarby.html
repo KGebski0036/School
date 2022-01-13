@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+
+    <meta charset="utf-8">
+    <title>puszki farby</title>
+
+    <style>
+      body{
+        text-align: center;
+        background-color: lightblue;
+      }
+    </style>
+    <script>
+      function Oblicz(){
+        var powierzchnia = document.getElementById("powierzchnia").valueAsNumber
+        if(powierzchnia != NaN){
+          var result =  Math.ceil(powierzchnia / 4.0)
+          document.getElementById("result").innerHTML = result
+        }
+      }
+    </script>
+    
+  </head>
+  <body>
+      <h2>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h2>
+    
+      Podaj powierzchnię:
+      <input type="number" name="powierzchnia_do_pomalownia" id="powierzchnia"><br>
+      <button onclick="Oblicz();">Policz</button><br>
+      Liczba jednolitrowych puszek farby potrzebnych do pomalowania wynosi:
+      <span id="result"></span>
+  </body>
+</html>
