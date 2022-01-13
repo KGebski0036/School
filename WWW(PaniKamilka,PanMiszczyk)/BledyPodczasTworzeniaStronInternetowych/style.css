@@ -1,0 +1,225 @@
+body {
+background-color : #404040;
+font-family : 'Lato', sans-serif;
+margin : 0 !important ;
+padding : 0 !important ;
+}
+#container {
+width : 1000px;
+margin-left : auto;
+margin-right : auto;
+background-color : white;
+}
+#containerform {
+width : 1000px;
+margin-left : auto;
+margin-right : auto;
+}
+#containerinf {
+height : 782px;
+background-color : white;
+font-size : 120%;
+width : 1000px;
+margin-left : auto;
+margin-right : auto;
+}
+#pasekGorny {
+background-color : #39B8A6;
+width : 100%;
+}
+#logo {
+width : 1000px;
+margin-left : auto;
+margin-right : auto;
+color : white;
+font-size : 44px;
+letter-spacing : 3px;
+font-weight : 900;
+}
+#topbar {
+background-color : #39B8A6;
+color : white;
+padding : 10px;
+margin-top : 20px;
+margin-bottom : 25px;
+height : 170px;
+}
+#topbarL {
+float : left;
+padding : 20px;
+width : 138px;
+text-align : center;
+border-right : 2px dotted #cccccc;
+}
+#topbarR {
+float : left;
+padding : 20px;
+width : 760px;
+font-size : 16px;
+text-align : justify;
+}
+#menuBoczne {
+float : left;
+min-height : 600px;
+padding : 20px;
+background-color : lightgray;
+text-align : center;
+font-size : 18px;
+border-right : 2px dashed #F35A57;
+}
+#content {
+font-size : 20px;
+float : left;
+padding : 40px;
+width : 730px;
+background-color : #dedede;
+min-height : 580px;
+text-align : justify;
+}
+#footer {
+background-color : #303030;
+clear : both;
+color : white;
+text-align : center;
+padding : 20px;
+font-size : 18px;
+}
+.menuG {
+color : white;
+}
+.linkWArtykule {
+text-decoration : none;
+color : #3e4b5e;
+}
+.linkWArtykule:hover {
+text-decoration : none;
+color : #F35A57;
+}
+#menu {
+background-color : #303030;
+margin-top : 20px;
+color : #ffffff;
+padding : 10px;
+}
+.option {
+background-image : url(grafika/przyciski.png);
+background-color : lightblue;
+text-align : center;
+float : left;
+width : 180px;
+font-size : 18px;
+padding : 10px;
+border-right : 2px dotted #F35A57;
+opacity : 50%;
+transition : all 0.2s ease-in-out;
+}
+.option:hover {
+opacity : 100%;
+cursor : pointer;
+}
+.optionL {
+font-size : 18px;
+height : 25px;
+padding : 10px;
+border-bottom : 2px dotted #444444;
+transition : all 0.2s ease-in-out;
+}
+.optionL:hover {
+background-color : #f36742DD;
+color : white;
+cursor : pointer;
+}
+.bigtitle {
+font-size : 32px;
+font-weight : 900;
+letter-spacing : 2px;
+}
+.doubleline {
+height : 5px;
+margin-top : 15px;
+margin-bottom : 20px;
+border-bottom : 3px double #F35A57;
+}
+.opcjeBoczne {
+text-decoration : none;
+color : black;
+}
+fieldset {
+border : #F35A57 solid 2px;
+padding : 15px;
+font-size : 110%;
+}
+legend {
+font-size : 120%;
+color : #39B8A6;
+}
+input[type="text"] {
+border : green solid 2px;
+border-radius : 20px;
+padding : 10px;
+background-color : lightgray;
+box-sizing : border-box;
+}
+input[type="text"]:focus {
+background-color : lightgreen;
+border-radius : 5px;
+}
+input[type="email"], input[type="tel"] {
+border : green solid 2px;
+border-radius : 20px;
+padding : 10px;
+background-color : lightgray;
+box-sizing : border-box;
+width : 300px;
+}
+input[type="email"]:focus, input[type="tel"]:focus {
+background-color : lightgreen;
+border-radius : 5px;
+}
+input[type="submit"] {
+font-weight : 600;
+font-size : 200%;
+width : 400px;
+border : green solid 2px;
+border-radius : 5px;
+padding : 15px;
+background-color : lightgreen;
+box-sizing : border-box;
+color : green;
+}
+input[type="submit"] {
+margin : 10px;
+font-weight : 600;
+font-size : 200%;
+width : 400px;
+border : green solid 3px;
+border-radius : 5px;
+padding : 15px;
+background-color : lightgreen;
+box-sizing : border-box;
+color : green;
+}
+input[type="submit"]:hover {
+background-color : #00CC00;
+border : #005500 solid 3px;
+cursor : pointer;
+}
+input[type="reset"] {
+margin-left : 10px;
+margin-bottom : 225px;
+font-weight : 600;
+font-size : 100%;
+border : #F35A57 solid 2px;
+border-radius : 5px;
+padding : 5px;
+background-color : #F35A57;
+box-sizing : border-box;
+color : red;
+}
+input[type="reset"]:hover {
+border : #660000 solid 2px;
+cursor : pointer;
+}
+label:hover {
+cursor : pointer;
+}

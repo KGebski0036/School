@@ -1,0 +1,45 @@
+body{
+  font-style: Georgia;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.blok1{
+  float: left;
+  background-color: Sienna;
+  color: white;
+  width: 40%;
+  height: 150px;
+}
+
+.blok2{
+float: left;
+background-color: Sienna;
+color: white;
+height: 150px;
+width: 50%;
+font-size: 150%;
+
+}
+.blok3{
+  float: left;
+  background-color: Sienna;
+  color: white;
+  height: 150px;
+  width: 10%;
+  text-align: center;
+}
+main{
+  clear:both;
+  background-color: Tan;
+  padding: 100px;
+}
+
+a{
+  color: Sienna;
+  background-color: Tan;
+  padding: 40px;
+  line-height: 150px;
+}

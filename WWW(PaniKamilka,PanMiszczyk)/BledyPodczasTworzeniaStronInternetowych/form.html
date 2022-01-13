@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Błędy w wyglądzie strony</title>
+	<meta name="description" content="Strona o błędach w wyglądzie strony" />
+	<meta name="keywords" content="strona internetowa, wygląd strony" />
+
+
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<header>
+	<div id="pasekGorny">
+		<img src="grafika/logo.svg" alt="Logo" width="500" height="100" style="float: left;">
+		<div id="logo">
+			Błędy podczas tworzenia stron internetowych
+		</div>
+	</div>
+</header>
+	<div id="containerform">
+		<nav>
+		<div id="menu">
+			<a class="menuG" href="index.html"><div class="option">Strona główna</div></a>
+			<a class="menuG" href="info.html"><div class="option">informacje o źródłach</div></a>
+			<a class="menuG" href="form.html"><div class="option">Formularz</div></a>
+
+			<div style="clear:both;"></div>
+		</div>
+	</nav>
+
+    <form action="mailto:19dg.karol.gebski@ezse.pl" method="post" enctype="text/plain">
+    <div>
+      <fieldset><legend>Twoje imię i nazwisko</legend>
+        <div>
+            <input type="text" name="imie" placeholder="Imię">
+						&nbsp;&nbsp;
+            <input type="text" name="nazwisko" placeholder="Nazwisko">
+        </div> </fieldset>
+
+      <fieldset><legend>Czy ta strona pomogła Ci?</legend>
+       <div>
+          <label> <input type="radio" value="tak" name="Przydatnosc">Tak </label>
+					&nbsp;
+          <label> <input type="radio" value="nie" name="Przydatnosc" >Nie</label>
+      </div></fieldset>
+
+      <fieldset><legend>Kim jesteś z zawodu?</legend>
+       <div>
+           <label><input type="radio" value="student" name="zawod">Student/uczeń</label>
+					 &nbsp;
+           <label><input type="radio" value="tworcaStron" name="zawod" >Twórca stron internetowych</label>
+					 &nbsp;
+           <label><input type="radio" value="inne" name="zawod" >Inne</label>
+      </div></fieldset>
+
+      <fieldset><legend>Twój adres e-mail lub numer telefonu</legend>
+       <div>
+           <input type="email" name="email" placeholder="TwójAdres@domena.pl" >
+           &nbsp;&nbsp;&nbsp;
+					 LUB
+					 &nbsp;&nbsp;&nbsp;
+           <input type="tel" name="telefon" placeholder="+48 678 876 890" >
+      </div></fieldset>
+      <div>
+          <input type="submit"  value="Wyślij"><br>
+          <input type="reset"  value="Wyczyść Formularz">
+     </div>
+
+
+
+    </div>
+
+	</form>
+	</div>
+	<footer>
+	<div id="footer">
+		Autor Karol Gębski 1dg &copy; Wszelkie prawa zastrzeżone
+	</div>
+	</footer>
+	</body>
+	</html>
