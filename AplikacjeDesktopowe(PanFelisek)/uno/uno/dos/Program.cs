@@ -13,7 +13,7 @@ namespace dos
             byte wiek = 100;
             Osoba o = new Osoba();
             o.imie = "Jan";
-            o.nazwisko = "Kowalski";
+            o.Nazwisko = "Kowalski";
             o.setWiek(wiek);
 
             Console.ReadLine();

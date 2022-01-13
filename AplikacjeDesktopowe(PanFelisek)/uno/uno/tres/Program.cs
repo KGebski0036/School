@@ -21,13 +21,6 @@ namespace tres
             Console.WriteLine("Wejdz na drzewo");
             kot.WejdzNaDrzewo();
 
-            KotoPies kotpies = new KotoPies();
-            kotpies.imie = "KotoPies";
-            kotpies.DajGlos();
-            kotpies.GonListonosza();
-            Console.WriteLine("Wejdz na drzewo");
-            kotpies.WejdzNaDrzewo();
-
             Console.ReadLine();
         }
     }

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "uno", "uno\uno.csproj", "{E22CA71F-E92D-45D1-8649-16BD1A844EF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podstawy1", "uno\Podstawy1.csproj", "{E22CA71F-E92D-45D1-8649-16BD1A844EF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dos", "dos\dos.csproj", "{1CCF0B3D-404A-48B4-97FC-4A03BC5FE90C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podstawy2", "dos\Podstawy2.csproj", "{1CCF0B3D-404A-48B4-97FC-4A03BC5FE90C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tres", "tres\tres.csproj", "{BBD05E2A-AF23-4EB2-8214-3D90E96F56DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podstawy3", "tres\Podstawy3.csproj", "{BBD05E2A-AF23-4EB2-8214-3D90E96F56DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
