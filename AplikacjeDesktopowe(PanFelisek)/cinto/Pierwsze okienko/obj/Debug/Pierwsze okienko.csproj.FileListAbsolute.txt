@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\Pierwsze okienko\bin\Debug\Pierwsze okienko.exe.config
+C:\Users\user\source\repos\Pierwsze okienko\bin\Debug\Pierwsze okienko.exe
+C:\Users\user\source\repos\Pierwsze okienko\bin\Debug\Pierwsze okienko.pdb
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze okienko.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze_okienko.Form1.resources
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze_okienko.Properties.Resources.resources
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze okienko.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze okienko.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze okienko.exe
+C:\Users\user\source\repos\Pierwsze okienko\obj\Debug\Pierwsze okienko.pdb

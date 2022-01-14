@@ -1,0 +1,7 @@
+C:\Users\user\source\repos\ulamek\bin\Debug\ulamek.exe.config
+C:\Users\user\source\repos\ulamek\bin\Debug\ulamek.exe
+C:\Users\user\source\repos\ulamek\bin\Debug\ulamek.pdb
+C:\Users\user\source\repos\ulamek\obj\Debug\ulamek.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\ulamek\obj\Debug\ulamek.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ulamek\obj\Debug\ulamek.exe
+C:\Users\user\source\repos\ulamek\obj\Debug\ulamek.pdb
