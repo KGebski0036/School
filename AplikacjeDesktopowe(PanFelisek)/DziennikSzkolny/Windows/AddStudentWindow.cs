@@ -21,6 +21,11 @@ namespace Szkolny_Dziennik.Windows
             if (student != null)
             {
                 EditStudent(student);
+                CreatedStudent = student;
+            }
+            if(student.Name == "")
+            {
+                buttonAddStudent.Text = "Zapisz edycję";
             }
         }
 
@@ -28,7 +33,7 @@ namespace Szkolny_Dziennik.Windows
         {
             textBoxInputImie.Text = student.Name;
             textBoxInputNazwisko.Text = student.SurName;
-            comboBoxInputKlasa.SelectedIndex = student.SchoolClassId;
+            comboBoxInputKlasa.SelectedItem = student.Schoolclass;
             numericUpDownInputRok.Value = student.YearOfBirth;
         }
 
@@ -50,13 +55,10 @@ namespace Szkolny_Dziennik.Windows
             else
             {
                 DialogResult = DialogResult.Yes;
-                CreatedStudent = new Student()
-                {
-                    Name = textBoxInputImie.Text,
-                    SurName = textBoxInputNazwisko.Text,
-                    YearOfBirth = (int)numericUpDownInputRok.Value,
-                    SchoolClassId = (comboBoxInputKlasa.SelectedItem as SchoolClass).Id
-                };
+                CreatedStudent.Name = textBoxInputImie.Text;
+                CreatedStudent.SurName = textBoxInputNazwisko.Text;
+                CreatedStudent.YearOfBirth = (int)numericUpDownInputRok.Value;
+                CreatedStudent.SchoolClassId = (comboBoxInputKlasa.SelectedItem as SchoolClass).Id;
             }
             Close();
         }
