@@ -16,11 +16,11 @@ using Szkolny_Dziennik.Windows;
 
 namespace Szkolny_Dziennik
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         StudentsDataBase studentsDataBase;
         Filters filters;
-        public Form1()
+        public MainWindow()
         {
             studentsDataBase = new StudentsDataBase();
             filters = new Filters() { Name = "", SchoolClass = -1, SurName = "", YearOfBirth = 0 };
@@ -69,6 +69,7 @@ namespace Szkolny_Dziennik
             dataGridViewUczniowie.DataSource = students
                 .Select(x => new StudentsView
                 {
+                    Id = x.Id,
                     Name = x.Name,
                     SurName = x.SurName,
                     YearOfBirth = x.YearOfBirth,
@@ -114,11 +115,87 @@ namespace Szkolny_Dziennik
 
         private void buttonAddStudent_Click(object sender, EventArgs e)
         {
-            AddStudentWindow a = new AddStudentWindow();
-            DialogResult dialogResult = a.ShowDialog();
+            AddStudentWindow window = new AddStudentWindow(studentsDataBase.SchoolClasses.ToList(), new Student());
+            DialogResult dialogResult = window.ShowDialog();
             if (dialogResult == DialogResult.Yes)
             {
-                
+                studentsDataBase.Students.Add(window.CreatedStudent);
+                studentsDataBase.SaveChanges();
+                UpdateStudents();
+            }
+            else if(dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Nie udało się dodać poprawnie studenta");
+            }
+        }
+
+     
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StudentsView selectedStudent = (dataGridViewUczniowie.CurrentRow.DataBoundItem as StudentsView);
+            Student editedStudent = studentsDataBase.Students.First(x => x.Id == selectedStudent.Id);
+
+            AddStudentWindow window = new AddStudentWindow(studentsDataBase.SchoolClasses.ToList(), editedStudent);
+            DialogResult dialogResult = window.ShowDialog();
+            if (dialogResult == DialogResult.Yes)
+            {
+                studentsDataBase.Update(window.CreatedStudent);
+                editedStudent = window.CreatedStudent;
+                studentsDataBase.SaveChanges();
+                UpdateStudents();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Nie udało się zmodyfikować poprawnie studenta");
+            }
+        }
+
+        private void buttonEditClass_Click(object sender, EventArgs e)
+        {
+            if (comboBoxSchoolClass.SelectedIndex != 0)
+            {
+                AddSchoolClas window = new AddSchoolClas(comboBoxSchoolClass.SelectedItem as SchoolClass);
+                DialogResult dialogResult = window.ShowDialog();
+                if (dialogResult == DialogResult.Yes)
+                {
+                    studentsDataBase.SchoolClasses.Update(window.CreatedSchoolClass);
+                    studentsDataBase.SaveChanges();
+                    UpdateSchoolClass();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    MessageBox.Show("Nie udało się zaktualizować poprawnie klasy");
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddSchoolClas window = new AddSchoolClas(new SchoolClass());
+            DialogResult dialogResult = window.ShowDialog();
+            if (dialogResult == DialogResult.Yes)
+            {
+                studentsDataBase.SchoolClasses.Add(window.CreatedSchoolClass);
+                studentsDataBase.SaveChanges();
+                UpdateSchoolClass();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                MessageBox.Show("Nie udało się dodać poprawnie nowej klasy");
+            }
+        }
+
+        private void buttonDeleteStudent_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Czy na pewno chcesz usunąć studenta?", "Usunięcie studenta", MessageBoxButtons.YesNo);
+            if(dialogResult == DialogResult.Yes)
+            {
+                StudentsView selectedStudent = (dataGridViewUczniowie.CurrentRow.DataBoundItem as StudentsView);
+                Student editedStudent = studentsDataBase.Students.First(x => x.Id == selectedStudent.Id);
+                studentsDataBase.Students.Remove(editedStudent);
+                studentsDataBase.SaveChanges();
+                UpdateStudents();
             }
         }
     }

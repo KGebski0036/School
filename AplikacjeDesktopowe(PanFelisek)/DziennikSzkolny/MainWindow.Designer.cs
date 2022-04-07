@@ -1,7 +1,7 @@
 ﻿
 namespace Szkolny_Dziennik
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         ///  Required designer variable.
@@ -40,12 +40,16 @@ namespace Szkolny_Dziennik
             this.comboBoxSchoolClass = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.buttonEditClass = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.buttonAddStudent = new System.Windows.Forms.Button();
             this.dataGridViewUczniowie = new System.Windows.Forms.DataGridView();
             this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nazwisko = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RokUrodzenia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Klasa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonAddStudent = new System.Windows.Forms.Button();
+            this.buttonDeleteStudent = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownYearOfbirth)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -157,6 +161,10 @@ namespace Szkolny_Dziennik
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.buttonDeleteStudent);
+            this.groupBox2.Controls.Add(this.buttonEditClass);
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.buttonAddStudent);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
             this.groupBox2.Location = new System.Drawing.Point(667, 93);
@@ -165,6 +173,47 @@ namespace Szkolny_Dziennik
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Operacje";
+            // 
+            // buttonEditClass
+            // 
+            this.buttonEditClass.Location = new System.Drawing.Point(6, 239);
+            this.buttonEditClass.Name = "buttonEditClass";
+            this.buttonEditClass.Size = new System.Drawing.Size(115, 51);
+            this.buttonEditClass.TabIndex = 3;
+            this.buttonEditClass.TabStop = false;
+            this.buttonEditClass.Text = "Edytuj Klase";
+            this.buttonEditClass.UseVisualStyleBackColor = true;
+            this.buttonEditClass.Click += new System.EventHandler(this.buttonEditClass_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(6, 172);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(115, 51);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Edytuj Studenta";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 104);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(115, 51);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Dodaj Klasę";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // buttonAddStudent
+            // 
+            this.buttonAddStudent.Location = new System.Drawing.Point(6, 35);
+            this.buttonAddStudent.Name = "buttonAddStudent";
+            this.buttonAddStudent.Size = new System.Drawing.Size(115, 51);
+            this.buttonAddStudent.TabIndex = 0;
+            this.buttonAddStudent.Text = "Dodaj Studnta";
+            this.buttonAddStudent.UseVisualStyleBackColor = true;
+            this.buttonAddStudent.Click += new System.EventHandler(this.buttonAddStudent_Click);
             // 
             // dataGridViewUczniowie
             // 
@@ -210,15 +259,16 @@ namespace Szkolny_Dziennik
             this.Klasa.HeaderText = "Klasa";
             this.Klasa.Name = "Klasa";
             // 
-            // buttonAddStudent
+            // buttonDeleteStudent
             // 
-            this.buttonAddStudent.Location = new System.Drawing.Point(6, 35);
-            this.buttonAddStudent.Name = "buttonAddStudent";
-            this.buttonAddStudent.Size = new System.Drawing.Size(115, 51);
-            this.buttonAddStudent.TabIndex = 0;
-            this.buttonAddStudent.Text = "Dodaj Studnta";
-            this.buttonAddStudent.UseVisualStyleBackColor = true;
-            this.buttonAddStudent.Click += new System.EventHandler(this.buttonAddStudent_Click);
+            this.buttonDeleteStudent.Location = new System.Drawing.Point(6, 300);
+            this.buttonDeleteStudent.Name = "buttonDeleteStudent";
+            this.buttonDeleteStudent.Size = new System.Drawing.Size(115, 51);
+            this.buttonDeleteStudent.TabIndex = 4;
+            this.buttonDeleteStudent.TabStop = false;
+            this.buttonDeleteStudent.Text = "Usuń Ucznia";
+            this.buttonDeleteStudent.UseVisualStyleBackColor = true;
+            this.buttonDeleteStudent.Click += new System.EventHandler(this.buttonDeleteStudent_Click);
             // 
             // Form1
             // 
@@ -258,6 +308,10 @@ namespace Szkolny_Dziennik
         private System.Windows.Forms.NumericUpDown numericUpDownYearOfbirth;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonAddStudent;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonEditClass;
+        private System.Windows.Forms.Button buttonDeleteStudent;
     }
 }
 
