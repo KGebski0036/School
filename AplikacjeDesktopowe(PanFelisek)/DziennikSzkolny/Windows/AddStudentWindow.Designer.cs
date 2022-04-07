@@ -96,6 +96,7 @@ namespace Szkolny_Dziennik.Windows
             // 
             // comboBoxInputKlasa
             // 
+            this.comboBoxInputKlasa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxInputKlasa.FormattingEnabled = true;
             this.comboBoxInputKlasa.Location = new System.Drawing.Point(174, 60);
             this.comboBoxInputKlasa.Name = "comboBoxInputKlasa";

@@ -14,9 +14,15 @@ namespace Szkolny_Dziennik.Windows
     public partial class AddSchoolClas : Form
     {
         public SchoolClass CreatedSchoolClass { get; set; }
-        public AddSchoolClas()
+        public AddSchoolClas(SchoolClass schoolClas)
         {
             InitializeComponent();
+            CreatedSchoolClass = schoolClas;
+            if (schoolClas.NameOfSchoolClass != "")
+            {
+                textBoxInputSchoolClassName.Text = schoolClas.NameOfSchoolClass;
+                button2.Text = "Zapisz edycje";
+            }   
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,7 +39,7 @@ namespace Szkolny_Dziennik.Windows
             else
             {
                 DialogResult = DialogResult.Yes;
-                CreatedSchoolClass = new SchoolClass() { NameOfSchoolClass = textBoxInputSchoolClassName.Text };
+                CreatedSchoolClass.NameOfSchoolClass = textBoxInputSchoolClassName.Text;
             }
             Close();
         }
