@@ -1,0 +1,24 @@
+﻿<Window x:Class="Bindowanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bindowanie"
+        mc:Ignorable="d"
+        Title="{Binding ElementName=jjj, Path=TextBlock.Text}" Height="450" Width="800" Name="jjj" >
+    <StackPanel>
+        <WrapPanel>
+            <TextBlock Text="Value: " FontWeight="Bold" Name="TextBlock" TextWrapping="Wrap"></TextBlock>
+            <TextBlock Margin="10" HorizontalAlignment="Center">Moja wspaniała ultra wydajna pierwsza aplikacja w języku programowania HTML i XAML</TextBlock>
+        </WrapPanel>
+        <TextBox Margin="10" TextChanged="TextBox_TextChanged" Name="textBox"></TextBox>
+        <TextBlock HorizontalAlignment="Center" Margin="30
+                   ">Wersja z Bindowaniem</TextBlock>
+        <WrapPanel>
+            <TextBlock Text="Value: " FontWeight="Bold" Name="TextBlock2"></TextBlock>
+            <TextBlock Margin="10" HorizontalAlignment="Center">Moja wspaniała ultra wydajna pierwsza aplikacja w języku programowania HTML i XAML</TextBlock>
+        </WrapPanel>
+        <TextBox Margin="10" Name="KK" Text="{Binding ElementName=jjj, Path=Title, UpdateSourceTrigger=PropertyChanged}"/>
+        <Button DataContext="AAA" Click="Button_Click" ></Button>
+    </StackPanel>
+</Window>
